@@ -9,6 +9,13 @@ class ChatUI {
     this.input = document.querySelector('input');
     this.room = document.querySelector('#room');
     this.submitHandler();
+
+    this.getInput = this.getInput.bind(this);
+    this.setRoom = this.setRoom.bind(this);
+    this.sendMsg = this.sendMsg.bind(this);
+    this.addMsg = this.addMsg.bind(this);
+    this.addRoom = this.addRoom.bind(this);
+    this.processUserInput = this.processUserInput.bind(this);
   }
 
   getInput() {
