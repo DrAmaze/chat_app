@@ -8,5 +8,5 @@ document.addEventListener('DOMContentLoaded', () => {
     socket.emit('rooms');
   }, 1000);
 
-  myChat.input.focus();
+  // myChat.input.focus();
 });
